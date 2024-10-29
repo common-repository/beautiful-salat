@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json.schemastore.org/block.json",
+  "apiVersion": 2,
+  "name": "fit/beautiful-salat",
+  "version": "0.1.0",
+  "title": "Beautiful Salat",
+  "category": "widgets",
+  "description": "Simple, beautiful, lightweight prayer times plugin using Gutenberg blocks for easy editing.",
+  "supports": {
+    "html": true
+  },
+  "attributes": {
+    "showHeader": {
+      "type": "boolean",
+      "default": true
+    },
+    "headerTitle": {
+      "type": "string",
+      "default": "Prayer Times"
+    },
+    "headerTitleColor": {
+      "type": "string"
+    },
+    "headerBackgroundColor": {
+      "type": "string"
+    },
+    "salatSettings": {
+      "type": "object",
+      "default": {
+        "method": 4,
+        "country": "SA",
+        "city": "Mecca",
+        "timings": {
+          "Fajr": 0
+        }
+      }
+    },
+    "showAllStyling": {
+      "type": "boolean",
+      "default": true
+    },
+    "showBoxShadow": {
+      "type": "boolean",
+      "default": true
+    },
+    "showHeaderStyle": {
+      "type": "boolean",
+      "default": true
+    },
+    "showContainerStyle": {
+      "type": "boolean",
+      "default": true
+    },
+    "maxWidth": {
+      "type": "string",
+      "default": "20rem"
+    }
+  },
+  "textdomain": "beautiful-salat",
+  "editorScript": "file:./build/index.js",
+  "editorStyle": "file:./build/style-index.css",
+  "style": "file:./build/style-index.css"
+}
